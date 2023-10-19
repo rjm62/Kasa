@@ -1,9 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import React from 'react'
+// import ReactDOM from 'react-dom'
+import {BrowserRouter as Router, Route,Routes } from 'react-router-dom'
+import './App.css'
+import About from './pages/About'
+import Header from './components/Header'
+import Home from './pages/Home'
+
+
+// import Error404 from './pages/Error404';
 
 function App() {
   return (
-    <div className="App">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element= {<Home />} />
+          <Route path="/About" element= {<About />} />
+        </Routes>
+      </Router>
+  )
+}
+
+export default App;
+
+
+
+/* <div className="App"> 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,9 +40,4 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+</header> */
