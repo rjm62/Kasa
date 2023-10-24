@@ -1,0 +1,51 @@
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .Error404Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 475px;
+    margin: auto;
+ }
+ 
+ .E404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 130px;
+ }
+
+ h1, P ,h3  {
+    color: #ff6060;
+    font-family: "Montserrat";
+}
+
+h3 {
+    text-align: center;
+}
+
+P {
+    font-size: 25px;
+}
+
+span {
+    color:#ff6060;
+    font-size: 15px;
+    font-weight: lighter;
+}   
+
+h1 {
+    font-size: 150px;
+}
+
+@media screen and (max-width:767px) and (min-width:320px) { 
+    p {
+        font-size: 15px;
+    }
+}

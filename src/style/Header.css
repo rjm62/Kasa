@@ -1,0 +1,52 @@
+.bodyHeader {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.headerContainer {
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.logo img{
+    max-width: 210px;
+    height: 67px;
+}
+
+.navContainer {
+    display: flex;
+}
+
+.homeLink {
+    padding-right: 65px;
+}
+
+.linkColor {
+    color: #ff6060;
+    font-size: 24px;
+    text-decoration: none;  
+}
+   
+nav :hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:767px) and (min-width:320px) { 
+    .linkColor{
+        font-size: 15px;
+    }
+}
+
+.logo img{
+    max-width: 150px;
+    height: 40px;
+}
+
+.homeLink {
+    padding-right: 30px;
+}

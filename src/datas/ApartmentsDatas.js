@@ -617,3 +617,5 @@ export const apartments = [
 		]
 	}
 ]
+
+export default apartments
