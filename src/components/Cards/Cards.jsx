@@ -1,5 +1,5 @@
 import '../../style/Cards.css'
-import {apartments} from '../../datas/ApartmentsDatas'
+import apartments from '../../datas/ApartmentsDatas.json'
 
 function Cards() { 
     return (

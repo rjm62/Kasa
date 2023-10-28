@@ -5,10 +5,10 @@ import "../../style/Home.css"
 
 function Home() {
     return (
-        <div className="homeBody">
+        <main className="homeBody">
             <Banner image= {homeBannerPicture} comment= "Chez vous, partout et ailleurs"/>
             <Cards />
-        </div>
+        </main>
     )
 }
 

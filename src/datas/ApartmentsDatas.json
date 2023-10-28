@@ -1,4 +1,4 @@
-export const apartments = [
+[
 	{
 		"identifiant": "c67ab8a7",
 		"title": "Appartement cosy",
@@ -617,5 +617,3 @@ export const apartments = [
 		]
 	}
 ]
-
-export default apartments

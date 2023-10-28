@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 215px;
+    height: 200px;
     background-color: black;
     margin:auto;
 }
@@ -12,7 +12,7 @@
 .logoFooterContainer {
     width: 122px;
     height: 40px;
-    padding: 40px 0 52px 0;
+    padding: 40px 0 35px 0;
     margin-bottom: 50px;
 }
 
