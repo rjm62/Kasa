@@ -12,7 +12,7 @@ function About() {
             <Banner image= {aboutBannerPicture} comment= {""} /> 
             { colls.map((coll) => { 
                 return (
-                    <Collapse oups={coll.text}/>  
+                    <Collapse title={coll.title} text={coll.text}/>  
                   
                 )     
             })}     
