@@ -23,7 +23,7 @@ function Collapse({text, title}) {
             </div>  
             <div className='collapseContent disappearanceContent'></div>    
         </div>
-            )
+    )
 }
 
 export default Collapse

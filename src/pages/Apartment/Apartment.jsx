@@ -5,6 +5,9 @@ import '../../style/Apartment.css'
 
 function Apartment() {
 
+    const {id} = useParams()
+    id = "b9123946/"
+
     return (
         <main>
             <div className='collapseApartmentContainer'>
