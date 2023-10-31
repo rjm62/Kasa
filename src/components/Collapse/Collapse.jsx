@@ -3,10 +3,11 @@ import '../../style/Collapse.css'
 
 function Collapse({text, title}) {
     const [isOpenCollapse, setIsOpenCollapse] = useState(false);
+    const [toto, setToto] = useState(0);
          
     return isOpenCollapse ? (
-        <div className='collapse'>
-            <div className="collapseOrder" onClick={() => setIsOpenCollapse(false)}>
+        <div className='collapse'onClick={() => setIsOpenCollapse(false)}>
+            <div className="collapseOrder" >
                 <p className='collapseTitle'>{title}</p>   
                 <button  className="collapseIcon rotateOpeningIcon"><i class="fa-solid fa-chevron-down"></i></button>
             </div>
@@ -15,14 +16,13 @@ function Collapse({text, title}) {
             </div>
         </div>
         ): (
-        <div className='collapse'>
-            <div className="collapseOrder"onClick={() => setIsOpenCollapse(true)}> 
+        <div className='collapse'  onClick={() => setIsOpenCollapse(true)}>
+            <div className="collapseOrder"> 
                 <p className='collapseTitle'>{title}</p>
-                <button  className="collapseIcon rotateClosingIcon" ><i class="fa-solid fa-chevron-up"></i></button> 
+                <button  className="collapseIcon rotateClosingIcon " ><i class="fa-solid fa-chevron-up "></i></button> 
             </div>  
-                <div className='collapseContent disappearanceContent'></div>    
+            <div className='collapseContent disappearanceContent'></div>    
         </div>
-        
             )
 }
 

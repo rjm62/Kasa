@@ -10,12 +10,14 @@ function About() {
    return  (
         <main className='aboutMain'>
             <Banner image= {aboutBannerPicture} comment= {""} /> 
-            { colls.map((coll) => { 
-                return (
-                    <Collapse title={coll.title} text={coll.text}/>  
-                  
-                )     
-            })}     
+            <div className='collapseAboutContainer'>
+                { colls.map((coll) => { 
+                    return (
+                        <Collapse title={coll.title} text={coll.text}/>  
+                    
+                    )     
+                })} 
+            </div>
         </main>
     )
 }

@@ -5,12 +5,12 @@ import '../../style/Footer.css'
 function Footer() {
     return (
         <div className='footerContainer'>
-            <picture className='logoFooterContainer'>
+            <figure className='logoFooterContainer'>
                 <img src={footerLogo} alt="logo footer" />
-            </picture>
-            <picture className='copyrightContainer'>
+            </figure>
+            <figure className='copyrightContainer'>
                 <p><i class="fa-regular fa-copyright"></i> 2020 Kasa. All rights reserved</p>
-            </picture>         
+            </figure>         
         </div>
     )
 }

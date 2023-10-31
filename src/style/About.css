@@ -8,11 +8,16 @@
     display: block;
     justify-content: center;
     align-items: center;
-    /* max-width: 1400px;
-    width: 100%;
-    padding:0 100px;
-    height:auto; */
     padding: 0 15px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
+}
+
+.collapseAboutContainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    width: 73%;
+    margin: 0 auto;
 }

@@ -4,9 +4,11 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
+import Apartment from './pages/Apartment/Apartment'
 import Error404 from './pages/Error404/Error404'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import './datas/ApartmentsDatas.json';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} /> 
+        <Route path="/Apartment/.id" element={<Apartment apartments/>} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<Error404 />} />   
       </Routes>

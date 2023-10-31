@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../../style/Cards.css'
 import apartments from '../../datas/ApartmentsDatas.json'
 
@@ -6,11 +7,15 @@ function Cards() {
         <div className='cardsContainer'>
                 { apartments.map((apartment) => { 
                     return (
-                        <figure key= {apartment.identifiant} className='card'>
-                            <img src={apartment.cover} alt= 'première photo' />
-                            <figcaption> {apartment.title}</figcaption>
-                        </figure>
-                )     
+                        <Link to={`/Apartment/${apartment.identifiant}/`}>  
+                            <figure key= {apartment.identifiant} className='card'>   
+                                <img src={apartment.cover} alt= 'première photo' />
+                                <figcaption> {apartment.title}</figcaption>
+                            </figure>
+                        </Link> 
+                            
+    
+                    )     
                 })}
         </div>
     )

@@ -1,0 +1,14 @@
+.main {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.collapseApartmentContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:80px;
+    max-width: 1240px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
