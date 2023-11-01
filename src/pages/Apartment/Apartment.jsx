@@ -7,8 +7,17 @@ function Apartment() {
     const {id} = useParams();
     apartments.filter((apartment) => apartment.identifiant === id)
 
+    for(let i=0; i<apartments.length; i++) {
+       if(apartments[i].identifiant===id) {
+        console.log(i)
+       }
+    }
+
     return (
         <main>
+            <figure className='sliderContainer'>
+                <img src="" alt="apartement"></img>
+            </figure>
             
             <div className='collapseApartmentContainer'>
                 <Collapse title= "Description" text= "ça va venir un peu de patience" />

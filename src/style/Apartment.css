@@ -3,6 +3,13 @@
     box-sizing: border-box;
 }
 
+.sliderContainer {
+    max-width: 1240px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
 .collapseApartmentContainer {
     display:grid;
     grid-template-columns: 1fr 1fr;
