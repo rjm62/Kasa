@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import './App.css'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
@@ -12,6 +12,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/Kasa" element={<Navigate replace to="/" />} />
         <Route path="/" element={<Home />} /> 
         <Route path="/Apartment/:id"  element={<Apartment />} />
         <Route path="/About" element={<About />} />

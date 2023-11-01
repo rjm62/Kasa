@@ -5,8 +5,8 @@ function Collapse({text, title}) {
     const [isOpenCollapse, setIsOpenCollapse] = useState(false);
     const test  = () => {setIsOpenCollapse(!isOpenCollapse)}  
     return isOpenCollapse ? (
-        <div className='collapse' onClick={test}>
-             {/* <div className='collapse' onClick={() => setIsOpenCollapse(false)}></div> */}
+        
+        <div className='collapse' onClick={() => setIsOpenCollapse(false)}>
             <div className="collapseOrder" >
                 <p className='collapseTitle'>{title}</p>   
                 <button  className="collapseIcon rotateOpeningIcon"><i class="fa-solid fa-chevron-down"></i></button>
@@ -16,7 +16,6 @@ function Collapse({text, title}) {
             </div>
         </div>
         ): (
-        // <div className='collapse'  onClick={() => setIsOpenCollapse(true)}>
         <div className='collapse' onClick={test}>
             <div className="collapseOrder"> 
                 <p className='collapseTitle'>{title}</p>
