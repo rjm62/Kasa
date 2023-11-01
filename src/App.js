@@ -1,4 +1,3 @@
-import React from 'react'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import About from './pages/About/About'
@@ -7,7 +6,6 @@ import Apartment from './pages/Apartment/Apartment'
 import Error404 from './pages/Error404/Error404'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import './datas/ApartmentsDatas.json';
 
 function App() {
   return (
@@ -17,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} /> 
         <Route path="/Apartment/:id"  element={<Apartment />} />
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error404 />} />   
+        <Route path="/*" element={<Error404 />} />   
       </Routes>
       <Footer />
     </Router>
