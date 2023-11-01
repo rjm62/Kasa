@@ -3,7 +3,6 @@ import '../../style/Collapse.css'
 
 function Collapse({text, title}) {
     const [isOpenCollapse, setIsOpenCollapse] = useState(false);
-    const [toto, setToto] = useState(0);
          
     return isOpenCollapse ? (
         <div className='collapse'onClick={() => setIsOpenCollapse(false)}>

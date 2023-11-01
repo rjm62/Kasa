@@ -4,7 +4,7 @@ function Banner({image, comment}) {
     return (
         <div >
             <figure className='bannerContainer'>
-                <img src={image} alt=" image de la bannière" />
+                <img src={image} alt="paysage" />
                 <figcaption>{comment}</figcaption>
             </figure>
         </div>

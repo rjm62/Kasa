@@ -9,7 +9,7 @@ function Cards() {
                 return (
                     <Link to={`/Apartment/${apartment.identifiant}/`}>  
                         <figure key= {apartment.identifiant} className='card'>   
-                            <img src={apartment.cover} alt= 'première photo' />
+                            <img src={apartment.cover} alt= 'caroussel' />
                             <figcaption> {apartment.title}</figcaption>
                         </figure>
                     </Link> 

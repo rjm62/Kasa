@@ -4,17 +4,16 @@ import apartments from '../../datas/ApartmentsDatas.json'
 import '../../style/Apartment.css'
 
 function Apartment() {
-
-    const {id} = useParams()
-    id = "b9123946/"
+    const {id} = useParams();
+    apartments.filter((apartment) => apartment.identifiant === id)
 
     return (
         <main>
+            
             <div className='collapseApartmentContainer'>
                 <Collapse title= "Description" text= "ça va venir un peu de patience" />
                 <Collapse title= "Equipement" text= "ça va venir un peu de patience" />
-            </div>
-           
+            </div> 
         </main>
 
     )
