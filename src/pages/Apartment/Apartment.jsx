@@ -13,12 +13,13 @@ function Apartment() {
     
 
    const apartmentDetails = apartments.filter((apartment) => apartment.identifiant === id)
-   
-  
+   console.log(apartmentDetails[0].équipements)
+
+
     return (
 
          apartmentDetails ? (
-        <main>
+        <main className='apartmentMain'>
             <div className='carrouselContainer'>
                 <Carrousel image={apartmentDetails[0]['des photos']} />         
             </div>
@@ -55,10 +56,10 @@ function Apartment() {
             </div>
             <div className='collapseApartmentContainer'>
                 <div className='collapseApartmentPosition'>
-                    <Collapse title= "description" text= {apartmentDetails[0].description} />
+                    <Collapse title= "description" text= {apartmentDetails[0].description} isArray= {false} />
                 </div>
                 <div className='collapseApartmentPosition'>
-                    <Collapse title= "équipements" text= {apartmentDetails[0].équipements.join("', '")} />
+                    <Collapse title= "équipements" text= {apartmentDetails[0].équipements} isArray= {true} />
                 </div>
             </div> 
         </main>

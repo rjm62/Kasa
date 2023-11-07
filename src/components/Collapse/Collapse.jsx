@@ -1,20 +1,12 @@
 import { useState} from 'react'
 import '../../style/Collapse.css'
 
-function Collapse({text, title}) {
+function Collapse({text, title, isArray}) {
     const [isOpenCollapse, setIsOpenCollapse] = useState(false);
     const [iconCloseClassName, setIconCloseClassName] = useState("collapseIcon")
     const [contentClassName, setContentClassName] =useState("collapseContent")
-    const donnees = {text}
-    const roro = donnees.toString();
-    console.log(roro)
-    const toto = [donnees.text]
-    console.log(toto)
-    const mickey = toto.length;
-    console.log(mickey)
 
-
-    console.log(donnees)
+    console.log(isArray)
 
     const closeIconValidate = ()=> { 
         setIsOpenCollapse(false)
@@ -29,12 +21,16 @@ function Collapse({text, title}) {
                 <button  className="collapseIcon rotateOpeningIcon"><i class="fa-solid fa-chevron-down"></i></button>
             </div>
             <div className='collapseContent appearanceContent'>
-                { toto.map((to) => { 
-                    return (
-                    <p>{to}</p> 
-                    )
-                })}
-               
+
+                { isArray=== true ? (
+                     <div> {text.map(( detail) => {    
+                        return <p>{detail}</p>
+                      })}
+                      </div>
+                     ) : (
+                    <p>{text}</p>                   
+                )}              
+
             </div>
         </div>
         ):  (    

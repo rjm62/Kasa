@@ -1,11 +1,11 @@
-.starsContainer {
+/* .starsContainer {
     display: flex;
     justify-content: end;
     align-items: center;
     max-width: 200px;
     width: 100%;
     height: 36px;
-}
+} */
 
 .starsContainer i {
     padding: 0;

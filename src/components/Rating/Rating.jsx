@@ -14,9 +14,9 @@ function Rating({ratingObtained, maximumPossibleRating}) {
      }
 
     return ( 
-        <div className='starsContainer'>   
+        <div>   
             {stars.map((star) => (  
-            <div className='starsContainer'><i className= {star} ></i></div>
+            <i className= {star} ></i>
             ))}
         </div> 
     )
