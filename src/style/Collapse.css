@@ -2,7 +2,7 @@
 display: block;
 width: 100%;
 max-width: 1240px;
-margin: 30px auto;
+margin: 0 auto;
 overflow: hidden;
 line-height: 25px;
 }
@@ -15,7 +15,7 @@ line-height: 25px;
     height: 50px;
     /* margin:auto; */
     padding: 0 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color:#ff6060;
     overflow: hidden;
 }
@@ -63,6 +63,7 @@ line-height: 25px;
     height: auto;
     /* margin: auto; */
     padding: 20px;
+    margin-top: -40px;
     border-radius: 5px;
     background-color:#f6f6f6;
     overflow: hidden;
@@ -73,7 +74,7 @@ line-height: 25px;
 }
 
 @keyframes appearance {
-    from {margin-top: -30px}
+    from {margin-top: -40px}
     to {margin-top: -0;}
 }
 

@@ -1,6 +1,119 @@
 .main {
     padding: 0;
     box-sizing: border-box;
+    margin: auto;
+}
+
+.carrouselContainer {
+    display: flex;
+    max-width: 1240px;
+    width: 100%;
+    height: 415px;
+    margin: 50px auto 25px auto;
+
+}
+
+.informationsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    /* background-color: orange; */
+}
+
+.locationInformations {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 80px;
+    line-height: 1.4;
+    padding-top: 5px;
+    /* background-color: blueviolet; */
+}
+
+.locationInformations h5 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+    font-size: 32px;
+    color: #ff6060;
+} 
+
+.locationInformations p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #ff6060;
+}
+
+
+.ownerInformations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+    height: 60px;
+    /* background-color: green; */
+
+}
+
+.ownerName {
+    width: 100px;
+    height: 80px;
+    padding: auto 0;
+    vertical-align: middle;
+    /* background-color: aqua; */
+}
+
+.ownerInformations p {
+    text-align: right;
+    color: #ff6060;
+    /* background-color: yellow; */
+    margin-top: 15px;
+    padding-right: 5px;
+
+}
+
+.ownerInformations figure {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #e3e3e3;
+}
+
+.ownerInformations figure img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.tagsAndRatingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 25px; 
+    margin-top: 10px;
+}
+
+.tagsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    max-width: 365px;
+    width: 100%;
+}
+
+.ratingPosition {
+    margin-bottom: 15px;
+
 }
 
 .sliderContainer {
@@ -19,3 +132,8 @@
     height: auto;
     margin: 0 auto;
 }
+
+.collapseApartmentPosition {
+    margin-bottom: 50px;
+}
+

@@ -5,16 +5,15 @@ import Collapse from "../../components/Collapse/Collapse"
 import '../../style/About.css'
 
 function About() {
-   
-
    return  (
         <main className='aboutMain'>
             <Banner image= {aboutBannerPicture} comment= {""} /> 
             <div className='collapseAboutContainer'>
                 { colls.map((coll) => { 
                     return (
-                        <Collapse title={coll.title} text={coll.text}/>  
-                    
+                        <div className='collapsePosition'>
+                            <Collapse title={coll.title} text={coll.text}/>  
+                        </div>                      
                     )     
                 })} 
             </div>
