@@ -48,7 +48,6 @@
     color: #ff6060;
 }
 
-
 .ownerInformations {
     display: flex;
     justify-content: space-between;
@@ -56,7 +55,6 @@
     width: 13%;
     height: 60px;
     /* background-color: green; */
-
 }
 
 .ownerName {
@@ -91,8 +89,7 @@
 
 .ownerInformations figure img{
     width: 100%;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
 
 .tagsAndRatingContainer {
@@ -142,3 +139,17 @@
     margin-bottom: 50px;
 }
 
+@media screen and (max-width:767px) and (min-width:320px) { 
+    .collapseApartmentContainer  {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+
+    .locationInformations h5 {
+        font-size: 16px;
+    }
+
+    .locationInformations p {
+        font-size: 9px;
+    }
+}

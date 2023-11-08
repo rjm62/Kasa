@@ -1,5 +1,4 @@
-import {useParams} from 'react-router-dom'
-import Error404 from '../Error404/Error404'
+import {useParams, Navigate} from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
 import Carrousel from '../../components/Carrousel/Carrousel'
 import Rating from '../../components/Rating/Rating'
@@ -13,12 +12,12 @@ function Apartment() {
     
 
    const apartmentDetails = apartments.filter((apartment) => apartment.identifiant === id)
-   console.log(apartmentDetails[0].équipements)
+   console.log(apartmentDetails)
 
 
     return (
 
-         apartmentDetails ? (
+         apartmentDetails !=="" ? (
         <main className='apartmentMain'>
             <div className='carrouselContainer'>
                 <Carrousel image={apartmentDetails[0]['des photos']} />         
@@ -63,8 +62,9 @@ function Apartment() {
                 </div>
             </div> 
         </main>
-        ) :  
-        <Error404 />       
+        ) : ( 
+        <Navigate replace to="Error404"/> 
+        )    
     )
  }
 
