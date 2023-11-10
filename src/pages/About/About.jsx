@@ -11,7 +11,7 @@ function About() {
             <div className='collapseAboutContainer'>
                 { colls.map((coll) => { 
                     return (
-                        <div className='collapsePosition'>
+                        <div key={coll.title} className='collapsePosition'>
                             <Collapse title={coll.title} text={coll.text}/>  
                         </div>                      
                     )     

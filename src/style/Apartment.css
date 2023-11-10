@@ -1,4 +1,11 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
 .apartmentMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     margin: auto;
     margin: 0 15px;
@@ -6,10 +13,13 @@
 
 .carrouselContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1240px;
     width: 100%;
     height: 415px;
     margin: 50px auto 25px auto;
+    /* background-color: yellow; */
 
 }
 
@@ -19,89 +29,34 @@
     align-items: center;
     max-width: 1240px;
     width: 100%;
-    height: 80px;
-    margin: auto;
-    /* background-color: orange; */
+    height: 130px;
+    margin: 20px auto 5px auto;
+    /* background-color: yellow; */
 }
 
-.locationInformations {
+
+
+.locationAndNavInformations {
     display: block;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    height: 80px;
+    width: 80%;
+    height: 125px;
     line-height: 1.4;
-    padding-top: 5px;
-    /* background-color: blueviolet; */
+    /* background-color: yellowgreen; */
 }
 
-.locationInformations h5 {
+.locationAndNavInformations h5 {
     font-family: "Montserrat";
     font-weight: lighter;
     font-size: 32px;
     color: #ff6060;
 } 
 
-.locationInformations p {
+.locationAndNavInformations p {
     font-family: "Montserrat";
     font-size: 18px;
     color: #ff6060;
-}
-
-.ownerInformations {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 13%;
-    height: 60px;
-    /* background-color: green; */
-}
-
-.ownerName {
-    width: 100px;
-    height: 80px;
-    padding: auto 0;
-    vertical-align: middle;
-    /* background-color: aqua; */
-}
-
-.ownerInformations p {
-    text-align: right;
-    color: #ff6060;
-    /* background-color: yellow; */
-    margin-top: 15px;
-    padding-right: 5px;
-
-}
-
-.ownerInformations figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 63px;
-    width: 100%;
-    max-height: 63px;
-    height:auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    background-color: #e3e3e3;
-}
-
-.ownerInformations figure img{
-    width: 100%;
-    border-radius: 50%;  
-}
-
-.tagsAndRatingContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1240px;
-    width: 100%;
-    height: 40px;
-    margin: 0 auto;
-    margin-bottom: 25px; 
-    margin-top: 10px;
 }
 
 .tagsContainer {
@@ -111,18 +66,60 @@
     margin-top: 15px;
     max-width: 365px;
     width: 100%;
+    /* background-color: blueviolet; */
 }
 
-.ratingPosition {
-    margin-bottom: 15px;
-
+.ownerAndRatingInformations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 20%;
+    height: 100px;
+    margin-top: -30px;
+    /* background-color: orange; */
 }
 
-.carrouselContainer {
-    max-width: 1240px;
+.owner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    margin: 60px auto 25px auto;
-    padding: 0 15px;
+    height: 63px;
+    margin-bottom: 17px;
+    padding: auto 0;
+    /* background-color: aqua; */
+}
+
+.name  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    color: #ff6060;
+    /* background-color: yellow; */
+    /* margin-top: 15px; */
+    padding-right: 5px;
+
+}
+
+.owner figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 63px;
+    width: 100%;
+    max-height: 63px;
+    height:auto;
+    border-radius: 50%;
+    /* margin-bottom: 15px; */
+    /* background-color: #e3e3e3; */
+}
+
+.ownerAndRatingInformations figure img{
+    width: 100%;
+    border-radius: 50%;  
 }
 
 .collapseApartmentContainer {
@@ -143,13 +140,58 @@
     .collapseApartmentContainer  {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
+        
     }
 
-    .locationInformations h5 {
-        font-size: 16px;
+    .carrouselContainer { 
+        height: 260px;
+        margin: 0 20px 0 20px;
+    
     }
 
-    .locationInformations p {
-        font-size: 9px;
+    .informationsContainer {
+        flex-direction: column;
+        height: 160px;
     }
+
+    .locationAndNavInformations {
+        width: 100%;
+        height: 80px;
+    }
+    
+    .locationAndNavInformations h5 {
+        font-size: 20px;
+    }
+
+    .locationAndNavInformations p {
+        font-size: 14px;
+    }
+
+
+    .ownerAndRatingInformations {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    }
+
+    .collapseApartmentPosition {
+        margin-bottom: 20px;
+}
+
+.owner {
+    width:50%;
+    margin-bottom: 0;
+}
+
+.name  {
+    font-size: 13px;
+}
+
+.owner figure {
+    max-width: 40px;
+    max-height: 40px;
+}
+
 }

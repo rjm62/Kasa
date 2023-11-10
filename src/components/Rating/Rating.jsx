@@ -1,26 +1,23 @@
 import '../../style/Rating.css'
 
 function Rating({ratingObtained, maximumPossibleRating}) {
-    const starOff = maximumPossibleRating-ratingObtained;
-    console.log(starOff);
-
     const stars= [];
-    for(let lulu=0; lulu<ratingObtained; lulu++) {
-        stars.push("fa-solid fa-star starObtained")
-     }
-
-     for(let lolo=0; lolo<starOff; lolo++) {
-        stars.push("fa-solid fa-star starNoObtained")
-     }
+    var starNumber=0;
+    
+    for(starNumber=0; starNumber<ratingObtained; starNumber++) {
+        stars.push({id:starNumber, text:'fa-solid fa-star starObtained'})
+    }
+    for(starNumber = ratingObtained; starNumber<maximumPossibleRating; starNumber++) {
+        stars.push({id:starNumber, text:'fa-solid fa-star starNoObtained'})
+    }
 
     return ( 
-        <div>   
+        <div className='starContainer'>   
             {stars.map((star) => (  
-            <i className= {star} ></i>
+            <i key={star.id} className= {star.text} ></i>
             ))}
         </div> 
     )
-
 }
 
 export default Rating

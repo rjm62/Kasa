@@ -7,8 +7,8 @@ function Cards() {
         <section className='cardsContainer'>
             { apartments.map((apartment) => { 
                 return (
-                    <Link to={`/Apartment/${apartment.identifiant}/`}>  
-                        <figure key= {apartment.identifiant} className='card'>   
+                    <Link key= {apartment.identifiant} to={`/Apartment/${apartment.identifiant}/`}>  
+                        <figure className='card'>   
                             <img src={apartment.cover} alt= 'caroussel' />
                             <figcaption> {apartment.title}</figcaption>
                         </figure>

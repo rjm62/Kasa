@@ -6,8 +6,6 @@ function Collapse({text, title, isArray}) {
     const [iconCloseClassName, setIconCloseClassName] = useState("collapseIcon")
     const [contentClassName, setContentClassName] =useState("collapseContent")
 
-    console.log(isArray)
-
     const closeIconValidate = ()=> { 
         setIsOpenCollapse(false)
         setIconCloseClassName ("collapseIcon rotateClosingIcon")
@@ -18,17 +16,17 @@ function Collapse({text, title, isArray}) {
         <div className='collapse' onClick = {closeIconValidate}>
             <div className="collapseOrder" >
                 <p className='collapseTitle'>{title}</p>   
-                <button  className="collapseIcon rotateOpeningIcon"><i class="fa-solid fa-chevron-down"></i></button>
+                <button  className="collapseIcon rotateOpeningIcon"><i className="fa-solid fa-chevron-down"></i></button>
             </div>
             <div className='collapseContent appearanceContent'>
 
                 { isArray=== true ? (
                      <div> {text.map(( detail) => {    
-                        return <p>{detail}</p>
+                        return <p key={detail} >{detail}</p>
                       })}
                       </div>
                      ) : (
-                    <p>{text}</p>                   
+                    <p key={text} >{text}</p>                   
                 )}              
 
             </div>
@@ -37,7 +35,7 @@ function Collapse({text, title, isArray}) {
         <div className='collapse'  onClick={() => setIsOpenCollapse(true)}>
             <div className="collapseOrder"> 
                 <p className='collapseTitle'>{title}</p>
-                <button  className={iconCloseClassName} ><i class="fa-solid fa-chevron-up "></i></button> 
+                <button  className={iconCloseClassName} ><i className="fa-solid fa-chevron-up "></i></button> 
             </div>  
             <div className= {contentClassName}></div>    
          </div>

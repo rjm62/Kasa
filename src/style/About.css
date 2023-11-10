@@ -25,3 +25,9 @@
 .collapsePosition {
     margin-bottom: 30px;
 }
+
+@media screen and (max-width:767px) and (min-width:320px) { 
+    .collapseAboutContainer {
+        width: 83%;
+    }
+}

@@ -3,11 +3,6 @@ import '../../style/Carrousel.css'
 
 function Carrousel({image}) {
     const [selection, setSelection] = useState(0)
-    // const [chevronLeft, setChevronLeft] = useState("fa-solid fa-chevron-left")
-
-    // if(image.length<2) {
-    //     setChevronLeft(chevronLeft(""))
-    // }
     
     const previous = () => {
         if (selection>0) {
@@ -27,8 +22,6 @@ function Carrousel({image}) {
         }
     }
     
-    console.log({image})
-    
     return (
         <div className='carrousel'>
             { image.length>2 ? (
@@ -38,9 +31,9 @@ function Carrousel({image}) {
             </div>
             ):("")}
             <p> {selection+1}/{image.length} </p>
-            <figure >
+        
                 <img src={image[selection]} alt ="appartement"></img>
-            </figure> 
+           
         </div>    
     )
 }

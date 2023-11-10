@@ -9,7 +9,7 @@ function Footer() {
                 <img src={footerLogo} alt="logo footer" />
             </figure>
             <figure className='copyrightContainer'>
-                <p><i class="fa-regular fa-copyright"></i> 2020 Kasa. All rights reserved</p>
+                <p><i className="fa-regular fa-copyright"></i> 2020 Kasa. All rights reserved</p>
             </figure>         
         </div>
     )
