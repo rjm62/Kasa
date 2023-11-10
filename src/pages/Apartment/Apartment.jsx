@@ -17,6 +17,15 @@ function Apartment() {
                 <Error404 />
             )}
             else { 
+                const regSep = /[ ]+/gi;
+                var nomPrenom=[]
+                if (apartmentDetails[0].hôte.nom ===undefined) {
+                    nomPrenom= apartmentDetails[0].hôte.name.split(regSep) 
+                }
+                else {
+                    nomPrenom= apartmentDetails[0].hôte.nom.split(regSep) 
+                }
+
             return (
         <main className='apartmentMain'>
             <div className='carrouselContainer'>
@@ -38,8 +47,8 @@ function Apartment() {
                 <div className='ownerAndRatingInformations'>
                     <div className='owner'>
                         <div className='name'>
-                            <p>{apartmentDetails[0].hôte.nom.split(" ")[0]}</p>
-                            <p>{apartmentDetails[0].hôte.nom.split(" ")[1]}</p>
+                            <p>{nomPrenom[0]}</p>
+                            <p>{nomPrenom[1]}</p>
                         </div>
                         <figure className='picture'>
                             <img src={apartmentDetails[0].hôte.photo} alt= "portrait"></img>
