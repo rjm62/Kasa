@@ -10,6 +10,7 @@ import '../../style/Apartment.css'
 
 function Apartment() {
     const {id} = useParams();
+    /* recherche après l'appartement qui a l'ID */
    const apartmentDetails = apartments.filter((apartment) => apartment.identifiant === id)
 
          if (apartmentDetails[0] ===undefined)  { 
