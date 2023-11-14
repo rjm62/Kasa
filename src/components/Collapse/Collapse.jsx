@@ -19,16 +19,14 @@ function Collapse({text, title, isArray}) {
                 <button  className="collapseIcon rotateOpeningIcon"><i className="fa-solid fa-chevron-down"></i></button>
             </div>
             <div className='collapseContent appearanceContent'>
-
                 { isArray=== true ? (
-                     <div> {text.map(( detail) => {    
+                    <div> {text.map(( detail) => {    
                         return <p key={detail} >{detail}</p>
-                      })}
-                      </div>
-                     ) : (
+                        })}
+                    </div>
+                ) : (
                     <p key={text} >{text}</p>                   
                 )}              
-
             </div>
         </div>
         ):  (    
@@ -38,8 +36,7 @@ function Collapse({text, title, isArray}) {
                 <button  className={iconCloseClassName} ><i className="fa-solid fa-chevron-up "></i></button> 
             </div>  
             <div className= {contentClassName}></div>    
-         </div>
-            
+         </div>          
     )
 }
 

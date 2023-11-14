@@ -1,7 +1,6 @@
 import footerLogo  from '../../assets/img/footerLogo.png'
 import '../../style/Footer.css'
 
-
 function Footer() {
     return (
         <div className='footerContainer'>

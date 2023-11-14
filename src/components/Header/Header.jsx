@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import headerLogo  from '../../assets/img/headerLogo.png'
 import '../../style/Header.css'
 
-
 function Header() {
     return (
         <div className='bodyHeader'>
@@ -19,7 +18,7 @@ function Header() {
                     </div>
                 </nav>
             </div>
-         </div>
+        </div>
     )
 }
 

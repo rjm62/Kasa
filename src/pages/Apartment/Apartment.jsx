@@ -29,9 +29,9 @@ function Apartment() {
 
             return (
         <main className='apartmentMain'>
-            <div className='carrouselContainer'>
+            <article className='carrouselContainer'>
                 <Carrousel image={apartmentDetails[0]['des photos']} />         
-            </div>
+            </article>
             <div className='informationsContainer'>
                 <div className='locationAndNavInformations'>
                     <h5>{apartmentDetails[0].title}</h5>
@@ -44,7 +44,6 @@ function Apartment() {
                         })}                  
                     </div>  
                 </div>
-
                 <div className='ownerAndRatingInformations'>
                     <div className='owner'>
                         <div className='name'>
@@ -59,14 +58,14 @@ function Apartment() {
                     </div>
                 </div>           
             
-            <div className='collapseApartmentContainer'>
-                <div className='collapseApartmentPosition'>
+            <article className='collapseApartmentContainer'>
+                <section className='collapseApartmentPosition'>
                     <Collapse key={1} title= "description" text= {apartmentDetails[0].description} isArray= {false} />
-                </div>
-                <div className='collapseApartmentPosition'>
+                </section>
+                <section className='collapseApartmentPosition'>
                     <Collapse key={2} title= "équipements" text= {apartmentDetails[0].équipements} isArray= {true} />
-                </div>
-            </div> 
+                </section>
+            </article> 
         </main>
     )}
  }

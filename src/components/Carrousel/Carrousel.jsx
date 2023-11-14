@@ -25,15 +25,13 @@ function Carrousel({image}) {
     return (
         <div className='carrousel'>
             { image.length>2 ? (
-            <div className='chevron'> 
-                <i onClick={previous}  className= "fa-solid fa-chevron-left" ></i>
-                <i onClick={next} className="fa-solid fa-chevron-right" ></i>   
-            </div>
-            ):("")}
+                <div className='chevron'> 
+                    <i onClick={previous}  className= "fa-solid fa-chevron-left" ></i>
+                    <i onClick={next} className="fa-solid fa-chevron-right" ></i>   
+                </div>
+            ):("")}       
             <p> {selection+1}/{image.length} </p>
-        
-                <img src={image[selection]} alt ="appartement"></img>
-           
+            <img src={image[selection]} alt ="appartement"></img>           
         </div>    
     )
 }
