@@ -2,28 +2,28 @@ import {useState} from 'react'
 import '../../style/Carrousel.css'
 
 function Carrousel({image}) {
-    const [selection, setSelection] = useState(0)
-    const [selectionNumber, setSelectionNumber] = useState(1)
+    const [selection, setSelection] = useState(0);
+    const [selectionNumber, setSelectionNumber] = useState(1);
     
     const previous = () => {
         if (selection>0) {
         setSelection(selection-1);
-        setSelectionNumber(selectionNumber-1)
+        setSelectionNumber(selectionNumber-1);
         }
         else {
-            setSelection(image.length-1)
-            setSelectionNumber(image.length)
+            setSelection(image.length-1);
+            setSelectionNumber(image.length);
         }
     }
 
     const next = () => {
         if (selection<image.length-1) {
         setSelection(selection+1);
-        setSelectionNumber(selectionNumber+1)
+        setSelectionNumber(selectionNumber+1);
         }
         else {
-            setSelection(0)
-            setSelectionNumber(1)
+            setSelection(0);
+            setSelectionNumber(1);
         }
     }
     
