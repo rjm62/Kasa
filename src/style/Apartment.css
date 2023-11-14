@@ -20,8 +20,6 @@
     width: 100%;
     height: 415px;
     margin: 50px auto 25px auto;
-    /* background-color: yellow; */
-
 }
 
 .informationsContainer {
@@ -33,10 +31,7 @@
     min-height: 130px;
     height: auto;
     margin: 20px auto 5px auto;
-    /* background-color: yellow; */
 }
-
-
 
 .locationAndNavInformations {
     display: block;
@@ -46,7 +41,6 @@
     min-height: 125px;
     height: auto;
     line-height: 1.4;
-    /* background-color: yellowgreen; */
 }
 
 .locationAndNavInformations h5 {
@@ -70,7 +64,6 @@
     max-width: 365px;
     margin-bottom: 25px;
     width: 100%;
-    /* background-color: blueviolet; */
 }
 
 .ownerAndRatingInformations {
@@ -81,7 +74,6 @@
     width: 20%;
     height: 100px;
     margin-top: -30px;
-    /* background-color: orange; */
 }
 
 .owner {
@@ -92,7 +84,6 @@
     height: 63px;
     margin-bottom: 17px;
     padding: auto 0;
-    /* background-color: aqua; */
 }
 
 .name  {
@@ -102,8 +93,6 @@
     align-items: flex-end;
     text-align: right;
     color: #ff6060;
-    /* background-color: yellow; */
-    /* margin-top: 15px; */
     padding-right: 5px;
 
 }
@@ -117,8 +106,6 @@
     max-height: 63px;
     height:auto;
     border-radius: 50%;
-    /* margin-bottom: 15px; */
-    /* background-color: #e3e3e3; */
 }
 
 .ownerAndRatingInformations figure img{
@@ -155,14 +142,12 @@
 
     .informationsContainer {
         flex-direction: column;
-        /* height: 160px; */
     }
 
     .locationAndNavInformations {
         width: 100%;
         min-height: 80px;
         height: auto;
-        /* background-color: blue; */
     }
     
     .locationAndNavInformations h5 {

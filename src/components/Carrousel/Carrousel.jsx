@@ -3,22 +3,27 @@ import '../../style/Carrousel.css'
 
 function Carrousel({image}) {
     const [selection, setSelection] = useState(0)
+    const [selectionNumber, setSelectionNumber] = useState(1)
     
     const previous = () => {
         if (selection>0) {
         setSelection(selection-1);
+        setSelectionNumber(selectionNumber-1)
         }
         else {
             setSelection(image.length-1)
+            setSelectionNumber(image.length)
         }
     }
 
     const next = () => {
         if (selection<image.length-1) {
         setSelection(selection+1);
+        setSelectionNumber(selectionNumber+1)
         }
         else {
             setSelection(0)
+            setSelectionNumber(1)
         }
     }
     
@@ -30,7 +35,7 @@ function Carrousel({image}) {
                     <i onClick={next} className="fa-solid fa-chevron-right" ></i>   
                 </div>
             ):("")}       
-            <p> {selection+1}/{image.length} </p>
+            <p> {selectionNumber}/{image.length} </p>
             <img src={image[selection]} alt ="appartement"></img>           
         </div>    
     )
