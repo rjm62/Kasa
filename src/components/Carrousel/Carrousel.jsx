@@ -30,13 +30,14 @@ function Carrousel({image}) {
     return (
         <div className='carrousel'>
             { image.length>2 ? (
+                /* dans ce cas on met des flèches de navigation de chaque côté de l'image */
                 <div className='chevron'> 
                     <i onClick={previous}  className= "fa-solid fa-chevron-left" ></i>
                     <i onClick={next} className="fa-solid fa-chevron-right" ></i>   
                 </div>
             ):("")}       
-            <div className='number'> {selection} </div>
-            <img src={image[selection]} alt ="appartement"></img>           
+            <img src={image[selection]} alt ="appartement"></img>  
+            <p> {selectionNumber}/{image.length} </p>         
         </div>    
     )
 }

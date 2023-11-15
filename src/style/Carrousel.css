@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.carrousel .number {
+.carrousel p {
     display: flex;
     position: absolute;
     top: 90%;
