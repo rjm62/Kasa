@@ -5,7 +5,6 @@ import Error404 from '../../pages/Error404/Error404'
 import Rating from '../../components/Rating/Rating'
 import Tag from '../../components/Tag/Tag'
 import apartments from '../../datas/ApartmentsDatas.json'
-import tagsDatas from '../../datas/tagsDatas'
 import '../../style/Apartment.css'
 
 function Apartment() {
@@ -37,9 +36,9 @@ function Apartment() {
                     <h5>{apartmentDetails[0].title}</h5>
                     <p>{apartmentDetails[0].location}</p>
                     <div className='tagsContainer'>
-                        { tagsDatas.map((tagData) => {
+                        {apartmentDetails[0]["Mots clés"].map((tagData) => {
                             return(
-                                 <Tag key={tagData.id} tagText= {tagData.text} />
+                                 <Tag key={tagData} tagText= {tagData} />
                             )
                         })}                  
                     </div>  

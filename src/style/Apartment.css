@@ -58,10 +58,10 @@
 
 .tagsContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
-    max-width: 365px;
+    max-width: 600px;
     margin-bottom: 25px;
     width: 100%;
 }
@@ -156,6 +156,10 @@
 
     .locationAndNavInformations p {
         font-size: 14px;
+    }
+
+    .tagsContainer {
+        max-width: 365px;
     }
 
 

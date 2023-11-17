@@ -36,7 +36,7 @@ function Carrousel({image}) {
                     <i onClick={next} className="fa-solid fa-chevron-right" ></i>   
                 </div>
             ):("")}       
-            <img src={image[selection]} alt ="appartement"></img>  
+            <img src={image[selection]} alt ="appartement" /> 
             <p> {selectionNumber}/{image.length} </p>         
         </div>    
     )
