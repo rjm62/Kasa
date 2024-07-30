@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/Kasa" element={<Navigate replace to="/" />} />
-        <Route path="/" element={<Home />} /> 
+        {/* <Route path="/Kasa" element={<Navigate replace to="/" />} /> */}
+        <Route path="/kasa" element={<Home />} /> 
         <Route path="/Apartment/:id"  element={<Apartment />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/kasa/About" element={<About />} />
         <Route path="/*" element={<Error404 />} />   
       </Routes>
       <Footer />
